@@ -1,12 +1,48 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- This tag is the responsive meta tag. This is used for making the site more responsive. This element gives
+        the browser instructions on how to control the page's dimensions and scaling. -->
+    <!-- width=device-width: Sets the width of the page to follow the screen-width of the device -->
+    <!-- width=device-width: Sets the initial zoom level when the page is loaded -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shivayan Bora - Fullstack Developer</title>
+    <!-- By Default each browser comes with it's own default styles and sometimes these styles will
+    clash with the ones we are providing. To avoid this, we need to remove the default styles first 
+    which is called a CSS Reset. The following CSS is doing that job. -->
+    <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="wallpaper"></div>
+    <div class="content">
+        <!-- These elements represents a portion of a document whose content is only indirectly related
+        to the document's main content. These are frequently presented as sidebars or call-out boxes -->
+        <aside class="side">
+            <!-- Defines a single self-contained element, usually an image. -->
+            <figure class="picture">
+                <div class="picture-shadow"></div>
+                <img id="pictureImage" class="picture-image" src="images/alex.jpg" srcset="images/alex.jpg 1x, images/alex@2x.jpg 2x, images/alex@3x.jpg 3x" alt="Portrait of Alex Jefferson" width="320" height="320">
+            </figure>
+        </aside>
+        <!-- Defines the main content of a web page. Can be displayed with a sidebar. -->
+        <main class="about">
+            <h1 class="name">Hi, I'm Shivayan Anand Bora</h1>
+            <p class="job">Fullstack Developer</p>
+            <hr class="hr">
+            <div class="description">
+                <p>
+                    Geek, Fullstack Developer, Photography enthusiast, Caffeine Addict and a serious musicoholic.
+                </p>
+            </div>
+            <div class="contact">
+                <a href="mailto:bora.shivayan@gmail.com">
+                    Get in touch
+                </a>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
