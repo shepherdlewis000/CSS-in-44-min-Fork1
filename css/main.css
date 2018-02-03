@@ -5,11 +5,24 @@ html {
     color: #fff;
     font-family: "Quicksand", sans-serif;
     font-size: 16px;
+    /* Browser specific font */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    /* It means each line of text will be 1.5 times the element's
+current font size */
     line-height: 1.5;
     min-height: 100vh;
     min-width: 300px;
+    /* Prevents the page from scrolling horizontally while preserving the
+usual vertical scroll */
     overflow-x: hidden;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
+
+a {
+    /* Using currentColor is prefered because it will pick up the color set by html */
+    color: currentColor;
+    /* This will force the hand cursor to show up once we hover over the link */
+    cursor: pointer;
+    text-decoration: none;
+    }
