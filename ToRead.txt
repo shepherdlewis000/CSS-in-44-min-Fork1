@@ -2,3 +2,6 @@
 2. Use of CSS Reset
 3. Use of aside, figure and main tags
 4. Pixel ratios of devices
+5. Flexbox
+6. sizes: vh and rem
+7. Media Queries
