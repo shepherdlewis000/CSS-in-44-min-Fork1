@@ -59,6 +59,17 @@ a {
   transition-duration: 100ms;
 }
 
+.social {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.social li {
+  height: 2rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  width: 2rem;
+}
+
 /* 3. Specific */
 /* We're using each background-* property instead of the shorthand background one.
 If you use background: red , you are essentially setting background-color: red and reseting all other
@@ -167,6 +178,16 @@ here to make sure .content covers the whole page. */
   transform: scale(0.98) translateY(-2px);
 }
 
+.social a:hover {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.social a:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 /* 4. Responsiveness */
 @media screen and (max-width: 799px) {
   .content {
@@ -200,4 +221,16 @@ here to make sure .content covers the whole page. */
     flex-grow: 1;
     flex-shrink: 1;
   }
+}
+
+.social a {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
 }

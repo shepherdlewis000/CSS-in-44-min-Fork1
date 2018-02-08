@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- This tag is the responsive meta tag. This is used for making the site more responsive. This element gives
@@ -9,23 +10,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shivayan Bora - Fullstack Developer</title>
+    <!-- Font Awesome is an icon library that allows you to easily include icons in your webpage. -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <!-- If JS is disabled -->
+    <noscript>
+        <style type="text/css">
+            .wallpaper {
+                animation-name: zoomOut;
+            }
+
+            .picture {
+                animation-name: dropIn;
+            }
+        </style>
+    </noscript>
     <!-- By Default each browser comes with it's own default styles and sometimes these styles will
     clash with the ones we are providing. To avoid this, we need to remove the default styles first 
     which is called a CSS Reset. The following CSS is doing that job. -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
 </head>
+
 <body>
-    <div class="wallpaper"></div>
+    <div id="wallpaper" class="wallpaper" data-image="images/austria.jpg"></div>
     <div class="content">
         <!-- These elements represents a portion of a document whose content is only indirectly related
         to the document's main content. These are frequently presented as sidebars or call-out boxes -->
         <aside class="side">
             <!-- Defines a single self-contained element, usually an image. -->
-            <figure class="picture">
+            <figure id="picture" class="picture">
                 <div class="picture-shadow"></div>
-                <img id="pictureImage" class="picture-image" src="images/alex.jpg" srcset="images/alex.jpg 1x, images/alex@2x.jpg 2x, images/alex@3x.jpg 3x" alt="Portrait of Alex Jefferson" width="320" height="320">
+                <!-- srcset="images/alex.jpg 1x, images/alex@2x.jpg 2x, images/alex@3x.jpg 3x" -->
+                <img id="pictureImage" class="picture-image" src="images/26047324_1757191220978223_7276538117084688719_n.jpg" srcset="images/26047324_1757191220978223_7276538117084688719_n.jpg 1x, images/26047324_1757191220978223_7276538117084688719_n.jpg 2x, images/26047324_1757191220978223_7276538117084688719_n.jpg 3x" alt="Portrait of Shivayan Bora"
+                    width="320" height="320">
             </figure>
         </aside>
         <!-- Defines the main content of a web page. Can be displayed with a sidebar. -->
@@ -42,6 +62,23 @@
                 <a class="button" href="mailto:bora.shivayan@gmail.com">
                     Get in touch
                 </a>
+                <ul class="social">
+                    <li>
+                        <a href="https://twitter.com/ritz_277">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/shivayanbora123">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shivayan-bora-9a858a35/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </main>
     </div>
